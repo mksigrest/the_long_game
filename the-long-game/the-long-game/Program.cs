@@ -8,23 +8,33 @@ namespace the_long_game
         static void Main(string[] args)
         {
             string name;
+            Console.WriteLine("Enter your name: ");
             name = Console.ReadLine();
+            Console.WriteLine("Hello " + name);
+
             int score = 0;
             ConsoleKeyInfo cki;
-            cki = Console.ReadKey();
-            
 
-            if (cki.Equals(cki))
+            Console.WriteLine("Your current score is " + score);
+            Console.WriteLine("Enter a key to add to your score!");
+
+            while (true)
             {
+                cki = Console.ReadKey();
+
                 if (cki.Key == ConsoleKey.Enter)
                 {
-
+                    Console.WriteLine("Exit");
+                    break;
                 }
 
                 else
                 {
                     score++;
+                    Console.WriteLine("Your current score is: " + score);
                 }
+
+                Console.WriteLine("Enter another key to add to your score!");
             }
         }
     }
