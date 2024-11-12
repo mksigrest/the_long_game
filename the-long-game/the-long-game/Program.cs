@@ -12,6 +12,17 @@ namespace the_long_game
             name = Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine("Hello " + name);
+            /*
+            if (name == name)
+            {
+                File.Open(@"saveFiles\" + name);
+            }*/
+            if (name == name)
+            {
+                FileStream names = new FileStream("../../the-long-game.cs", FileMode.Open);
+                //atic System.IO.FileStream Create(name @"saveFiles\");
+                //File.Create(@"saveFiles\" + name);
+            }
 
             int score = 0;
             ConsoleKeyInfo cki;
