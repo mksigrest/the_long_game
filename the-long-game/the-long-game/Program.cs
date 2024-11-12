@@ -10,6 +10,7 @@ namespace the_long_game
             string name;
             Console.WriteLine("Enter your name: ");
             name = Console.ReadLine();
+            Console.WriteLine();
             Console.WriteLine("Hello " + name);
 
             int score = 0;
@@ -17,6 +18,7 @@ namespace the_long_game
 
             Console.WriteLine("Your current score is " + score);
             Console.WriteLine("Enter a key to add to your score!");
+            Console.WriteLine();
 
             while (true)
             {
@@ -31,10 +33,12 @@ namespace the_long_game
                 else
                 {
                     score++;
+                    Console.WriteLine();
                     Console.WriteLine("Your current score is: " + score);
                 }
 
-                Console.WriteLine("Enter another key to add to your score!");
+                Console.WriteLine("Enter another key to add to your score, or press enter to leave!");
+                Console.WriteLine();
             }
         }
     }
